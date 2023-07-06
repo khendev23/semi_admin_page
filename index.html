@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <title>AdminPage</title>
+    <script src="js/jquery-3.7.0.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="leftBar" style="color: white; line-height: 2.3">
+        <div class="logo" style="padding-left: 20px; padding-top: 10px">
+          <!-- 로고이미지 -->
+          로고이미지
+        </div>
+        <hr />
+        <div class="serviceName" style="padding-left: 20px; padding-top: 10px">
+          쓰리고
+        </div>
+        <di class="goToMainSite" style="padding-left: 20px; padding-top: 10px">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-up-right-square"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"
+              />
+            </svg>
+          </span>
+          <a href="">사이트 바로가기</a>
+        </di>
+        <hr />
+        <h5 style="padding-left: 20px; padding-top: 10px">사이트 관리</h5>
+        <div class="dashboard" style="padding-left: 25px; padding-top: 10px">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-grid"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+              />
+            </svg>
+          </span>
+          <a href="">대시보드</a>
+        </div>
+        <div
+          class="memberManagement"
+          style="padding-left: 25px; padding-top: 10px"
+        >
+          <div class="wrap">
+            <ul class="list">
+              <li class="items">
+                <div class="a_title">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-vcard"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"
+                      />
+                      <path
+                        d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"
+                      />
+                    </svg>
+                  </span>
+                  <a href="">사용자 관리</a>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="a_content">
+                  <div class="userManagement">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-person"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                        />
+                      </svg>
+                    </span>
+                    <a href="">회원정보조회</a>
+                  </div>
+                  <div class="riderManagement">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-bicycle"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"
+                        />
+                      </svg>
+                    </span>
+                    <a href="">라이더 관리</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="qanda" style="padding-left: 25px; padding-top: 10px">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-card-text"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
+              />
+              <path
+                d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </span>
+          <a href="">문의사항</a>
+        </div>
+        <div
+          class="contentsManagement"
+          style="padding-left: 25px; padding-top: 10px"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-pencil-square"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+              />
+            </svg>
+          </span>
+          <a href="">컨텐츠 관리</a>
+        </div>
+        <div
+          class="reportManagement"
+          style="padding-left: 25px; padding-top: 10px"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-exclamation-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+              />
+            </svg>
+          </span>
+          <a href="">신고내역</a>
+        </div>
+      </div>
+      <section style="width: 1630px">
+        <nav class="navbar bg-light" style="margin-left: 330px">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">쓰리고</a>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+        </nav>
+      </section>
+    </section>
+    <section>
+      <div
+        class="card"
+        style="margin: 30px 0 0 330px; width: 1300px; height: 150px"
+      >
+        <div class="card-header" id="todayIssueHeader">
+          오늘의 이슈
+          <span class="badge text-bg-secondary" style="background-color: tomato"
+            >7</span
+          >
+        </div>
+        <div class="card-body" id="todayIssueBody">
+          <span>신규가입</span>&nbsp;<span
+            style="color: tomato; font-weight: 600"
+            >2</span
+          >&nbsp;&nbsp;&nbsp;&nbsp; <span>신규신청</span>&nbsp;<span
+            style="color: tomato; font-weight: 600"
+            >1</span
+          >&nbsp;&nbsp;&nbsp;&nbsp; <span>신규 라이더 승인</span>&nbsp;<span
+            style="color: tomato; font-weight: 600"
+            >1</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <br />
+          <br />
+          <span>취소관리</span>&nbsp;<span
+            style="color: tomato; font-weight: 600"
+            >0</span
+          >&nbsp;&nbsp;&nbsp;&nbsp; <span>신고내역</span>&nbsp;<span
+            style="color: tomato; font-weight: 600"
+            >0</span
+          >&nbsp;&nbsp;&nbsp;&nbsp; <span>답변대기문의</span>&nbsp;<span
+            style="color: tomato; font-weight: 600"
+            >2</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container text-center" style="margin: 30px 0 0 320px">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">방문자 현황</div>
+              <div class="card-body">
+                <div id="curve_chart" style="width: 630px; height: 350px"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="card-header">통계</div>
+              <div class="card-body">
+                <div id="columnchart_material" style="width: 600px; padding: 80px 0 0 20px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="padding-top: 20px">
+            <div class="card">
+              <div class="card-header">문의사항</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="col" style="padding-top: 20px">
+            <div class="card">
+              <div class="card-header">신고현황</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/adminMain.js"></script>
+  </body>
+</html>
