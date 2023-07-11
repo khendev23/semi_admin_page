@@ -53,10 +53,10 @@ google.charts.setOnLoadCallback(drawChart2);
 function drawChart2() {
     var data = google.visualization.arrayToDataTable([
         ['Month', 'Sales'],
-        ['2014', 1000],
-        ['2015', 1170],
-        ['2016', 660],
-        ['2017', 1030]
+        ['4월', 1000],
+        ['5월', 1170],
+        ['6월', 660],
+        ['7월', 1030]
     ]);
 
     var options = {
