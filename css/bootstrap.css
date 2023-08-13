@@ -274,7 +274,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  /* color: var(--bs-link-hover-color); */
 }
 
 a:not([href]):not([class]),
@@ -3982,7 +3982,7 @@ fieldset:disabled .btn {
   color: var(--bs-navbar-color);
 }
 .navbar-text a,
-.navbar-text a:hover,
+/* .navbar-text a:hover, */
 .navbar-text a:focus {
   color: var(--bs-navbar-active-color);
 }
@@ -11221,7 +11221,7 @@ fieldset:disabled .btn {
 .leftBar {
   width: 300px;
   height: 1200px;
-  background-color: #49B466;
+  background-color: #0a53be;
   position: fixed;
 }
 
@@ -11281,7 +11281,9 @@ a {
 
 .leftBar {color: white; line-height: 2.3;}
 
-.logo {padding-left: 20px; padding-top: 10px; font-family: 'KyoboHandwriting2022khn'; font-size: 25px;}
+.logo {padding-left: 20px; padding-top: 10px;}
+
+.logo img{width: 250px;}
 
 .serviceName {padding-left: 20px; padding-top: 10px;}
 
@@ -11299,3 +11301,14 @@ a {
 }
 
 .memberManagement, .qanda, .reportManagement, .showMeTheMoney{padding-left: 25px; padding-top: 10px;}
+
+.mainSection a:hover{
+  font-size: 1.1em;
+  /* font-weight: 800; */
+  color: white;
+  transition: .3s ease;
+}
+
+#dataForm{line-height: 2.3;}
+
+#dataForm input{border-style: none;}

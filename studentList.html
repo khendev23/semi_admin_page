@@ -146,141 +146,180 @@
       </section>
     </section>
     <section>
-      <div class="card" style="margin: 30px 0 0 330px; width: 1300px; height: 150px">
-        <div class="card-header" id="todayIssueHeader" style="font-weight: 700; font-size: 1.05em;">
-          오늘의 이슈
-          <span class="badge text-bg-secondary" style="background-color: tomato">
-            7
-          </span>
-        </div>
-        <div class="card-body" id="todayIssueBody">
-          <span>신규 수강생</span>
-          &nbsp;
-          <span style="color: tomato; font-weight: 600">2</span>
-          &nbsp;&nbsp;&nbsp;&nbsp; 
-          <span>가입 승인</span>
-          &nbsp;
-          <span style="color: tomato; font-weight: 600">2</span>
-          &nbsp;&nbsp;&nbsp;&nbsp; 
-          <span>휴가 승인</span>
-          &nbsp;
-          <span style="color: tomato; font-weight: 600">1</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <br />
-          <br />
-          <span>신규 게시글</span>
-          &nbsp;
-          <span style="color: tomato; font-weight: 600">1</span>
-          &nbsp;&nbsp;&nbsp;&nbsp; 
-          <span>신고내역</span>
-          &nbsp;
-          <span style="color: tomato; font-weight: 600">0</span>
-          &nbsp;&nbsp;&nbsp;&nbsp; 
-          <span>상담내역</span>
-          &nbsp;
-          <span style="color: tomato; font-weight: 600">2</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="card" style="margin: 30px 0 0 330px; width: 1300px; height: fit-content">
+          <div class="card-header" id="todayIssueHeader">
+              수강생 목록
+          </div>
+          <div class="card-body" id="todayIssueBody">
+              <table class="table table-hover text-center">
+                  <thead>
+                      <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">ID</th>
+                          <th scope="col">이름</th>
+                          <th scope="col">과목</th>
+                          <th scope="col">반</th>
+                          <th scope="col">학생 타입</th>
+                          <th scope="col">쪽지보내기</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr data-bs-toggle="modal" data-bs-target="#myModal" data-row-id="1" data-first-id="khendev23" data-second-name="유성근" data-phone="01011112222" data-birthday="1996-03-31" data-subject="JAVA" data-class="352" data-email="khendev23@gmail.com" data-lastDay="2023-09-06" data-handle="@mdo">
+                          <td>1</td>
+                          <td>khendev23</td>
+                          <td>유성근</td>
+                          <td>JAVA</td>
+                          <td>352</td>
+                          <td>수강생</td>
+                          <td>
+                            <button style="border: 0; background-color: transparent;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                              </svg>
+                            </button>
+                          </td>
+                      </tr>
+                      <tr data-bs-toggle="modal" data-bs-target="#myModal" data-row-id="2" data-first-id="sukey0331" data-second-name="김성근" data-phone="01011112223" data-birthday="1996-03-31" data-subject="정보보안" data-class="231" data-email="sukey0331@daum.net"data-lastDay="2023-09-06" data-handle="@fat">
+                          <td>2</td>
+                          <td>sukey0331</td>
+                          <td>김성근</td>
+                          <td>정보보안</td>
+                          <td>231</td>
+                          <td>예비생</td>
+                          <td>
+                            <button style="border: 0; background-color: transparent;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                              </svg>
+                            </button>
+                          </td>
+                      </tr>
+                      <tr data-bs-toggle="modal" data-bs-target="#myModal" data-row-id="3" data-first-id="choco0331" data-second-name="최성근" data-phone="01011112224" data-birthday="1996-03-31" data-subject="JAVA" data-class="351" data-email="choco0331@nate.com" data-lastDay="2023-09-06" data-handle="@twitter">
+                          <td>3</td>
+                          <td>choco0331</td>
+                          <td>최성근</td>
+                          <td>JAVA</td>
+                          <td>351</td>
+                          <td>수료생</td>
+                          <td>
+                            <button style="border: 0; background-color: transparent;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                              </svg>
+                            </button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <br>
+          </div>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" style="width: 1200px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">상세 정보</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                        <iframe src="쓰리고근로계약서.pdf" style="width: 100%; height: 500px;"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                      <form id="dataForm" method="post" action="process_form.jsp" style="font-size: 20px;">
+                          <input type="hidden" name="rowId" id="modalRowId">
+                          ID : <input type="text" name="firstId" id="modalFirstId" readonly> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                          이름 : <input type="text" name="secondName" id="modalSecondName" readonly> <br>
+                          연락처 : <input type="text" name="phone" id="modalPhone" readonly> <br>
+                          생년월일 : <input type="date" name="birthday" id="modalBirthday" readonly> <br>
+                          이메일 : <input type="text" name="email" id="modalEmail" readonly> <br>
+                          과목 : <input type="text" name="subject" id="modalSubject" readonly> <br>
+                          반 : <input type="text" name="className" id="modalClass" readonly> <br>
+                          수료일 : <input type="date" name="lastDay" id="modalLastDay"><br>
+                          <hr>
+                          <button type="button" id="btnEdit">수정</button> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+                          <button type="button" id="btnBan">강퇴</button> 
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- 모달의 나머지 부분은 동일하게 유지 -->
+            </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="container text-center" style="margin: 30px 0 0 320px">
-        <div class="row row-cols-2">
-          <div class="col">
-            <div class="card" style="width: 635px;">
-              <div class="card-header" style="font-weight: 700; font-size: 1.05em;">게시판 현황</div>
-              <div class="card-body">
-                <div id="donutChart" style="width: 630px; height: 350px;"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col">
-            <div class="card" style="width: 635px;">
-              <div class="card-header" style="font-weight: 700; font-size: 1.05em;">게시글 통계</div>
-              <div class="card-body">
-                <div id="barChart_1" style="width: 630px; height: 350px;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col" style="padding-top: 20px">
-            <div class="card" style="width: 635px; height:540px;">
-              <div class="card-header" style="font-weight: 700; font-size: 1.05em;">미승인 내역</div>
-              <div class="card-body">
-                <div style="padding: 30px 0 10px 0">
-                  <button onclick="location.href='studentApprovement.html'">수강생 승인하기</button>
-                  <button onclick="location.href='vacationApprovementList.html'">휴가 승인하기</button>
-                </div>
-                <div class="warning-box" style="display: flex; padding: 20px 0 0 20px;">
-                  <div class="warning-img">
-                    <img src="/img/khcommu-removebg-preview.png" style="width: 90px;">
-                  </div>
-                  <div class="warning-content" style="float: left; text-align: left; line-height: 0.7; padding-top: 9px;">
-                    <p style="font-weight: 600;">
-                      <span style="background-color: burlywood; border-radius: 10px; padding: 4px;;">수강생 승인</span> JAVA반 수강생 KH타임 회원 신청합니다.
-                    </p>
-                    <p style="font-size: 13px;">&nbsp;hellojava | 2023.08.10</p>
-                  </div>  
-                </div>
-                <div class="warning-box" style="display: flex; padding: 20px 0 0 20px;">
-                  <div class="warning-img">
-                    <img src="/img/khcommu-removebg-preview.png" style="width: 90px;">
-                  </div>
-                  <div class="warning-content" style="float: left; text-align: left; line-height: 0.7; padding-top: 9px;">
-                    <p style="font-weight: 600;">
-                      <span style="background-color: burlywood; border-radius: 10px; padding: 4px;">수강생 승인</span> 정보보안반 수강생 KH타임 회원 신청합니다.
-                    </p>
-                    <p style="font-size: 13px;">&nbsp;byesecurity | 2023.08.12</p>
-                  </div>  
-                </div>
-                <div class="warning-box" style="display: flex; padding: 20px 0 0 20px;">
-                  <div class="warning-img">
-                    <img src="/img/khcommu-removebg-preview.png" style="width: 90px;">
-                  </div>
-                  <div class="warning-content" style="float: left; text-align: left; line-height: 0.7; padding-top: 9px;">
-                    <p style="font-weight: 600;">
-                      <span style="background-color: darkseagreen; border-radius: 10px; padding: 4px;">휴가 승인</span> 352 이장준 / 8월 7일 휴가 신청합니다.
-                    </p>
-                    <p style="font-size: 13px;">&nbsp;lotteworld | 2023.08.04</p>
-                  </div>  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" style="padding-top: 20px">
-            <div class="card" style="width: 635px; height:540px;">
-              <div class="card-header" style="font-weight: 700; font-size: 1.05em;">신고현황</div>
-              <div class="card-body">
-                <div class="warning-box" style="display: flex; padding: 20px 0 0 20px;">
-                  <div class="warning-img">
-                    <img src="/img/khcommu-removebg-preview.png" style="width: 90px;">
-                  </div>
-                  <div class="warning-content" style="float: left; text-align: left; line-height: 0.7; padding-top: 9px;">
-                    <p style="font-weight: 600;">[게시글 신고] 스팸 광고입니다.</p>
-                    <p style="font-size: 13px;">&nbsp;sukey0331 | 2023.07.10</p>
-                  </div>
-                </div>
-                <div class="warning-box" style="display: flex; padding: 20px 0 0 20px;">
-                  <div class="warning-img">
-                    <img src="/img/khcommu-removebg-preview.png" style="width: 90px;">
-                  </div>
-                  <div class="warning-content" style="float: left; text-align: left; line-height: 0.7; padding-top: 9px;">
-                    <p style="font-weight: 600;">[댓글 신고] 롯데월드 갔다왔다고 욕합니다. 혼내주세요.</p>
-                    <p style="font-size: 13px;">&nbsp;이장준 | 2023.07.10</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <br>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tableRows = document.querySelectorAll("tr[data-bs-toggle='modal']");
+    
+        tableRows.forEach((row) => {
+          row.addEventListener("click", function () {
+            const rowId = row.getAttribute("data-row-id");
+            const firstId = row.getAttribute("data-first-id");
+            const secondName = row.getAttribute("data-second-name");
+            const phone = row.getAttribute("data-phone");
+            const birthday = row.getAttribute("data-birthday");
+            const email = row.getAttribute("data-email");
+            const subject = row.getAttribute("data-subject");
+            const className = row.getAttribute("data-class");
+            const lastDay = row.getAttribute("data-lastDay");
+            const handle = row.getAttribute("data-handle");
+    
+            // 모달 내의 입력 필드에 데이터 설정
+            document.getElementById("modalRowId").value = rowId;
+            document.getElementById("modalFirstId").value = firstId;
+            document.getElementById("modalSecondName").value = secondName;
+            document.getElementById("modalPhone").value = phone;
+            document.getElementById("modalBirthday").value = birthday;
+            document.getElementById("modalEmail").value = email;
+            document.getElementById("modalSubject").value = subject;
+            document.getElementById("modalClass").value = className;
+            document.getElementById("modalLastDay").value = lastDay;
+            document.getElementById("modalHandle").value = handle;
+          });
+        });
+    
+        // 수정 버튼 클릭 이벤트 처리
+        $("#btnEdit").on("click", function () {
+          showConfirmation("edit", "edit_process.jsp");
+        });
+    
+        // 강퇴 버튼 클릭 이벤트 처리
+        $("#btnBan").on("click", function () {
+          showConfirmation("ban", "ban_process.jsp");
+        });
+    
+        // 확인 메시지 표시 후 데이터 전송 함수 호출
+        function showConfirmation(action, url) {
+          if (confirm("정말로 진행하시겠습니까?")) {
+            sendDataToServer(action, url);
+          }
+        }
+    
+        // 서버로 데이터를 전송하는 함수
+        function sendDataToServer(action, url) {
+          const formData = new FormData($("#dataForm")[0]);
+          formData.append("action", action);
+    
+          $.ajax({
+            type: "POST",
+            url: url, // 수정 또는 강퇴에 따라 다른 URL 지정
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+              // 서버 응답을 처리
+              // 예: 성공 메시지를 표시하거나 다른 동작 수행
+            }
+          });
+        }
+      });
+    </script>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
-
       $(function(){
         var accordionButton = $('.list .items > .a_title');
         accordionButton.on('click', function(e){
@@ -307,71 +346,6 @@
           }
         };
       });
-
-      var chart = bb.generate({
-        data: {
-          columns: [
-            ["자유게시판", 230],
-            ["취업/정보", 120],
-            ["우리반게시판", 120],
-            ["오늘 뭐먹지", 140],
-          ],
-          type: "donut", // for ESM specify as: donut()
-        },
-        donut: {
-          title: "게시판 Top5\n(기준:게시글수)"
-        },
-        bindto: "#donutChart"
-      });
-
-      let today = new Date();
-      let yesterday = new Date();
-      yesterday.setDate(yesterday.getDate() - 1);
-      let twoDayAgo = new Date();
-      twoDayAgo.setDate(twoDayAgo.getDate() - 2);
-      let threeDayAgo = new Date();
-      threeDayAgo.setDate(threeDayAgo.getDate() - 3);
-
-      let todMonth = today.getMonth() + 1;
-      let todDay = today.getDate();
-      let yesMonth = yesterday.getMonth() + 1;
-      let yesDay = yesterday.getDate();
-      let twoMonth = twoDayAgo.getMonth() + 1;
-      let twoDay = twoDayAgo.getDate();
-      let threeMonth = threeDayAgo.getMonth() + 1;
-      let threeDay = threeDayAgo.getDate();
-
-      var data = {
-        x: "x",
-        columns: [
-          ["x", threeMonth + "/" + threeDay, twoMonth + "/" + twoDay, yesMonth + "/" + yesDay, todMonth + "/" + todDay],
-          ["총 게시글수", 330, 200, 270, 300]
-        ],
-        type: "bar" // for ESM specify as: bar()
-      };
-
-      var chart = bb.generate({
-        data: data,
-        axis: {
-          x: {
-            type: "category" // x축 값을 카테고리로 설정
-          }
-        },
-        bar: {
-          width: {
-            ratio: 0.5
-          }
-        },
-        size: {
-          width: 600,
-          height: 350
-        },
-        padding: {
-          top: 20
-        },
-        bindto: "#barChart_1"
-      });
-
     </script>
   </body>
 </html>
